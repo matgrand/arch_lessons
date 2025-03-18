@@ -6,6 +6,10 @@ See the other files in this repository for more specific topics, here there are 
 ### Many will be applicable to linux in general
 
 1. SSH No Password: 
-    ```ssh-copy-id user@host```
+    ```
+    ssh-copy-id user@host
+    ```
 2. Make Kitty (and other funky terminals) work in ssh: 
-    ```infocmp -x | ssh YOUR-SERVER -- tic -x -```
+    ```
+    infocmp -x | ssh YOUR-SERVER -- tic -x -
+    ```
