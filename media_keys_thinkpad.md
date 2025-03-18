@@ -5,11 +5,11 @@
 ```
 evdev:name:ThinkPad Extra Buttons:dmi:bvn*:bvr*:bd*:svnLENOVO*:pn*:*
  KEYBOARD_KEY_4b=playpause
- KEYBOARD_KEY_4c=nextsong
- KEYBOARD_KEY_4d=previoussong
+ KEYBOARD_KEY_4c=previoussong
+ KEYBOARD_KEY_4d=nextsong
 ```
 
-2. Run the following commands to update the keymap:
+1. Run the following commands to update the keymap:
 
 ```
 sudo systemd-hwdb update && sudo udevadm control --reload-rules && sudo udevadm trigger
