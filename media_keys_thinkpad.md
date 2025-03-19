@@ -16,3 +16,13 @@ sudo systemd-hwdb update && sudo udevadm control --reload-rules && sudo udevadm 
 ```
 
 3. Reboot for the changes to take effect.
+
+
+In a single command:
+
+```bash
+echo 'evdev:name:ThinkPad Extra Buttons:dmi:bvn*:bvr*:bd*:svnLENOVO*:pn*:*
+ KEYBOARD_KEY_4b=playpause
+ KEYBOARD_KEY_4c=previoussong
+ KEYBOARD_KEY_4d=nextsong' | sudo tee /etc/udev/hwdb.d/t14s-keyboard.hwdb && sudo systemd-hwdb update && sudo udevadm control --reload-rules && sudo udevadm trigger
+```
